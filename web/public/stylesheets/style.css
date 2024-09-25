@@ -1,8 +1,46 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("vars.css");
+
+html,body {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+section#cta {
+  outline: solid 1px red;
+  min-height: 50vh;
+  background-image: url("../images/restaurante-viva\ maria.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color-cta);
+  position: relative;
+  div.backdrop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(2px);
+  }
+  h1 {
+    font-size: var(--font-size-cta);
+    z-index: 1;
+  }
+  p {
+    font-size: 3rem;
+    z-index: 1;
+  }
+  a {
+    font-size: 2rem;
+    border: solid 2px var(--font-color-cta);
+    padding: 0.3rem 1rem;
+    background-color: blue;
+    color: var(--font-color-cta);
+    z-index: 1;
+  }
 }

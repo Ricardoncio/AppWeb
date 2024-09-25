@@ -1,0 +1,17 @@
+
+	CLIENTE
+
+ - Como cliente, quiero conocer la carta antes de llegar al restaurante para conocer los precios.
+ - Como cliente con necesidades especiales, quiero saber qué productos tienen alérgenos o son para veganos o celíacos para no 
+	tener que preguntarlo al camarero.
+ - Como cliente quiero saber lso menus del restaurante para poder compararlos con otros.
+ - Como cliente quiero tener acceso a un teléfono de contacto, horario y la ubicación del restaurante para poder ir.
+ - Como clietne quiero poder realizar un pedido online para encargar el desayuno/comida y sólo tener que recogerlo.
+ - Como cliente quiero poder realizar una reserva y saber si el restaurante la ha aceptado o no.
+ - Como cliente quiero poder recibir noticias, novedades y promociones del restaurante.
+
+	ADMINISTRADOR
+
+ - Como administrador quiero poder modificar la carta en tiempo real para realizar pequeños cambios.
+ - Como administrador quiero poder ver un listado de las reservas realizadas para poder aceptarlas o rechazarlas.
+ - Como administrador quiero poder ver un lstado de los pedidos realizados para poder prepararlos a timepo.
