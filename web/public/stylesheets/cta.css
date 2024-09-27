@@ -1,0 +1,57 @@
+section#cta {
+    outline: solid 1px red;
+    min-height: 50vh;
+    background-image: url("../images/restaurante-viva\ maria.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--font-color-cta);
+    position: relative;
+  
+    div.backdrop{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.404);
+      backdrop-filter: blur(2px);
+    }
+  
+    .inner {
+      z-index: 1;
+      font-family: "Lilita One", "Sans Serif";
+      font-weight: 300;
+    }
+  
+    h1 {
+      font-size: clamp( 2rem, var(--font-size-h1-cta), 6rem );
+      font-weight: lighter;
+    }
+  
+    p {
+      font-size: calc( clamp( 2rem, var(--font-size-h1-cta), 6rem ) / 2 );
+    }
+  
+    a {
+      font-size: 2rem;
+      border: solid 2px var(--font-color-cta);
+      padding: 1rem 1rem;
+      background-color: var(--primary-color);
+      border-radius: 4px;
+      box-shadow: 0 0 3px var(--primary-color);
+      color: var(--font-color-cta);
+      text-decoration: none;
+      transition: all 1s;
+  
+      &:hover {
+        color: var(--primary-color);
+        background-color: var(--font-color-cta);
+      }
+    }
+  
+  }

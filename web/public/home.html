@@ -11,14 +11,47 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <base href="http://localhost:3000">
+
 </head>
 <body>
+
+    <header id="top">
+        <nav class="menu">
+            <img src="https://picsum.photos/150/40" alt="Logo del restaurante">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Menús</a>
+                    <ul class="submenu">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Menú del día</a></li>
+                        <li><a href="#">Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Reservar</a></li>
+            </ul>
+            <ul class="mobile-open-menu">
+                <li><a href="#" id="open-menu">Menú</a>
+                <ul class="submenu">
+                    <li><a href="#"></a>Carta</li>
+                    <li><a href="#"></a>Galería</li>
+                    <li><a href="#"></a>Contacto</li>
+                </ul></li>
+            </ul>
+        </nav>
+    </header>
+    
      <section id="cta">
         <div class="backdrop"></div>
-        <h1>Restaurante Viva María</h1>
-        <p>Reserva tu mesa en Viva María y disfruta de la auténtica gastronomía italiana en Málaga</p>
-        <a href="#">Haz tu reserva</a>
+        <div class="inner">
+            <h1>Restaurante Viva María</h1>
+            <p>Reserva tu mesa en Viva María y disfruta de la auténtica gastronomía italiana en Málaga</p>
+            <a href="#">Haz tu reserva</a>
+        </div>
      </section>
 </body>
 </html>
