@@ -67,6 +67,17 @@ header#top {
 
     ul.mobile-open-menu {
       display: none;
+      li{
+        position:unset;
+
+        ul.submenu{
+          position:absolute;
+          left:0;
+          right:0;
+        }
+
+      }
+
     }
   }
 }
