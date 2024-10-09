@@ -4,6 +4,7 @@
 @import url("offcanvas.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("components.css");
 
 html,body {
   margin: 0;
@@ -168,5 +169,137 @@ section#slide {
   95% {left: -300%;}
   100% {left: 0;}
 
+
+}
+
+main#celebraciones {
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: var(--site-width);
+  margin: auto;
+
+  h1 {
+    font-size: var(--font-family-header);
+    font-size: 3rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  section.chess {
+
+    .row {
+      display: flex;
+      position: relative;
+
+      div {
+        flex: 1;
+        padding: 1rem;
+
+        h3 {
+          font-family: var(--font-family-header);
+          font-size: 3rem;
+          line-height: 3rem;
+
+        }
+
+        * {
+          font-size: 1.5rem;
+          line-height: 2rem;
+
+        }
+
+      }
+
+      div:has(img) {
+        padding: 0;
+        position: relative;
+
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          object-fit: cover;
+          object-position: center center;
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+main#contacto {
+  font-size: 1.2rem;
+  text-align: center;
+
+  div.container {
+    display: flex;
+    margin-top: 6rem;
+    padding: 2rem;
+
+    div {
+      flex: 1;
+
+      &.direccion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+
+      &.formDiv {
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+        }
+        form div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transition: 0.3s;
+          padding: 1rem;
+
+          input[type=text], input[type=email], textarea {
+            border: solid;
+            border-color: var(--primary-color);
+            border-width: 0 0 3px 0;
+            padding: 1rem;
+            font-size: inherit;
+
+          }
+
+          &:has(:focus) {
+            background-color: var(--primary-color);
+            color: var(--font-color-cta);
+
+            * {
+              background-color: inherit;
+              color: inherit;
+              outline: none;
+
+            }
+          }
+
+        }
+      }
+    }
+  }
 
 }

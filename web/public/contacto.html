@@ -47,13 +47,13 @@
         <nav class="menu">
             <img src="https://picsum.photos/150/40" alt="Logo del restaurante">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li>
                     <a href="#">Menús</a>
                     <ul class="submenu">
                         <li><a href="#">Carta</a></li>
                         <li><a href="#">Menú del día</a></li>
-                        <li><a href="#">Celebraciones</a></li>
+                        <li><a href="celebraciones.html">Celebraciones</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Galería</a></li>
@@ -74,103 +74,51 @@
         </nav>
     </header>
 
-    <section id="cta">
-        <div class="backdrop"></div>
-        <div class="inner">
-            <h1>Restaurante Viva María</h1>
-            <p>Reserva tu mesa en Viva María y disfruta de la auténtica gastronomía italiana en Málaga</p>
-            <a class="button" href="#" class="open-offcanvas">Haz tu reserva</a>
+    <main id="contacto" class="boxed">
+
+        <h1>Contacto</h1>
+        <div class="container">
+            <div class="direccion">
+                <h1>Nuestra Dirección</h1>
+                <p><b>Restaurante Viva María</b></p>
+                <p>Calle Ejemplo 123, 29001 Málaga, España</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: contacto@vivamaria.com</p>
+                <p>Horario: Lunes a Domingo, 12:00 - 23:00</p>
+            </div>
+            <div class="formDiv">
+                <form action="#">
+                    <h1>Envíanos un mensaje</h1>
+                    <div>
+                        <label for="input1">Nombre:</label>
+                        <datalist id="data">
+                            <option value="Francisco"></option>
+                            <option value="Álvaro"></option>
+                            <option value="Carlos"></option>
+                        </datalist>
+                        <input type="text" list="data" name="nombre" id="input1">
+                    </div>
+                    <div>
+                        <label for="input2">Email:</label>
+                        <input type="email" name="email" id="input2">
+                    </div>
+                    <div>
+                        <label for="input3">Mensaje:</label>
+                        <textarea name="mensaje" id="input3"></textarea>
+                    </div>
+                    <div>
+                        <label for="input4">
+                        <input type="checkbox" name="politica" id="input4" required>
+                        Acepto la <a href="#">política de privacidad</a></label>
+                    </div>
+                    <div>
+                        <input class="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
 
-
-
-    <main>
-
-        <section id="presentacion" class="cols boxed">
-
-            <h2>Bienvenido a Viva María: Un Viaje Gastronómico</h2>
-            <div class="inner">
-                <div>
-                    <img src="https://www.picsum.photos/200" alt="foto">
-                    En Viva María, te ofrecemos un menú inspirado en los sabores auténticos de nuestra tierra. Cada
-                    plato es elaborado con ingredientes frescos y de temporada, reflejando la diversidad culinaria que
-                    nos rodea. Desde nuestras empanadas caseras hasta los jugosos cortes de carne a la parrilla, cada
-                    bocado te transportará a un mundo de deliciosas tradiciones.
-                </div>
-                <div>
-                    <img src="https://www.picsum.photos/200" alt="foto">
-                    Nuestro ambiente acogedor y amigable es perfecto para compartir momentos especiales con amigos y
-                    familiares. Con una cuidada selección de vinos locales y postres que despiertan los sentidos, cada
-                    visita a Viva María se convierte en una experiencia memorable. Ven y descubre por qué somos el lugar
-                    favorito de quienes buscan una combinación de buena comida y calidez humana.
-                </div>
-                <div>
-                    <img src="https://www.picsum.photos/200" alt="foto">
-                    Además, en Viva María nos apasiona la sostenibilidad. Trabajamos con productores locales para
-                    garantizar que nuestros ingredientes sean frescos y respetuosos con el medio ambiente. Creemos que
-                    disfrutar de una buena comida también significa cuidar nuestro entorno, y nos esforzamos por hacer
-                    nuestra parte en cada plato que servimos.
-                </div>
-                <div>
-                    <img src="https://www.picsum.photos/200" alt="foto">
-                    Te invitamos a que vengas a disfrutar de nuestra cocina abierta, donde puedes ver a nuestros chefs
-                    en acción. Nos encanta que nuestros comensales sean parte del proceso, porque en Viva María no solo
-                    servimos comida; creamos experiencias que celebran la unión y la buena compañía. ¡Te esperamos!
-                </div>
-            </div>
-
-        </section>
-
-        <section id="banner" class="boxed">
-            <h2>Conoce en Detalle Nuestro Restaurante Viva María</h2>
-            <p>En Viva María, cada rincón cuenta una historia. Nuestro restaurante combina una atmósfera acogedora y
-                vibrante, inspirada en la rica cultura gastronómica de la región. Desde el momento en que entras, te
-                sumerges en un ambiente lleno de calidez, donde el arte y la decoración reflejan nuestras raíces.
-                Nuestro equipo de chefs apasionados utiliza ingredientes frescos y de alta calidad para ofrecerte una
-                experiencia culinaria inolvidable, fusionando recetas tradicionales con toques contemporáneos.</p>
-
-            <p>Además de una variada selección de platillos, en Viva María también valoramos la conexión con nuestros
-                comensales. Ofrecemos un servicio personalizado, asegurándonos de que cada visita sea especial. Ya sea
-                para una cena íntima, una celebración con amigos o una reunión familiar, nuestro restaurante es el lugar
-                ideal para disfrutar de momentos memorables. ¡Te esperamos para que descubras todo lo que tenemos para
-                ofrecerte!</p>
-        </section>
-
-        <section id="video" class="">
-            <video class="background" src="videos/fondo.mp4" autoplay muted loop>
-
-            </video>
-            <div class="foreground">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, temporibus.</h2>
-            </div>
-        </section>
-
-        <section id="slide">
-
-            <div class="slide-container">
-                <div class="inner">
-                    <div class="slide">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, et.</h3>
-                    </div>
-                    <div class="slide">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, temporibus?</h3>
-                    </div>
-                    <div class="slide">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, sunt?</h3>
-                    </div>
-                    <div class="slide">
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, sunt?</h3>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        
     </main>
-
-
-
 
     <footer>
 

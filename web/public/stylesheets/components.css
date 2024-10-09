@@ -1,0 +1,17 @@
+.button {
+    font-size: 2rem;
+    border: solid 2px var(--font-color-cta);
+    padding: 1rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 0 0 3px var(--primary-color);
+    color: var(--font-color-cta);
+    text-decoration: none;
+    transition: all 0.7s;
+
+    &:hover {
+      color: var(--primary-color);
+      background-color: var(--font-color-cta);
+      cursor: pointer;
+    }
+  }
