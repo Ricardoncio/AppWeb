@@ -6,7 +6,7 @@ aside#offcanvas {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -25rem;
+    left: -26rem;
     padding: 1rem;
     z-index: 9;
     display: flex;

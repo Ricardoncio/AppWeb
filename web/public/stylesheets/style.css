@@ -113,9 +113,9 @@ section#video {
 }
 
 section#slide {
-  
 
   .slide-container {
+    overflow: hidden;
     position: relative;
     height: 10rem;
 
@@ -372,7 +372,7 @@ main#galeria {
 dialog#lightbox {
   background-color: rgba(0,0,0,0.65);
   padding: 0;
-
+  
   form {
     display: flex;
     flex-direction: column;
