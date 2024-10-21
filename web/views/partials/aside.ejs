@@ -1,0 +1,28 @@
+<h2>Reserva mesa</h2>
+
+<form action="">
+
+    <div class="control">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+    </div>
+
+    <div class="control">
+        <label for="fecha">Fecha</label>
+        <input type="datetime-local" id="fecha" name="fecha">
+    </div>
+
+    <div class="control">
+        <label for="personas">Personas</label>
+        <input type="number" id="personas" name="personas" min="1" max="5" value="1">
+    </div>
+
+    <input type="hidden" name="lenguaje" id="lenguaje">
+    
+    <div class="control">
+        <button>Reservar</button>
+    </div>
+
+</form>
+
+<button class="close">&times;</button>

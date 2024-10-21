@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <%- include('partials/head') %>
+
+</head>
+
+<body>
+
+    <aside id="offcanvas">
+
+        <%- include('partials/aside') %>
+
+    </aside>
+
+    <header id="top">
+
+        <%- include('partials/header') %>
+
+    </header>
+
+    <main id="contacto" class="boxed">
+
+        <h1>Contacto</h1>
+        <div class="container">
+            <div class="direccion">
+                <h1>Nuestra Dirección</h1>
+                <p><b>Restaurante Viva María</b></p>
+                <p>Calle Ejemplo 123, 29001 Málaga, España</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: contacto@vivamaria.com</p>
+                <p>Horario: Lunes a Domingo, 12:00 - 23:00</p>
+            </div>
+            <div class="formDiv">
+                <form action="#">
+                    <h1>Envíanos un mensaje</h1>
+                    <div>
+                        <label for="input1">Nombre:</label>
+                        <datalist id="data">
+                            <option value="Francisco"></option>
+                            <option value="Álvaro"></option>
+                            <option value="Carlos"></option>
+                        </datalist>
+                        <input type="text" list="data" name="nombre" id="input1">
+                    </div>
+                    <div>
+                        <label for="input2">Email:</label>
+                        <input type="email" name="email" id="input2">
+                    </div>
+                    <div>
+                        <label for="input3">Mensaje:</label>
+                        <textarea name="mensaje" id="input3"></textarea>
+                    </div>
+                    <div>
+                        <label for="input4">
+                        <input type="checkbox" name="politica" id="input4" required>
+                        Acepto la <a href="#">política de privacidad</a></label>
+                    </div>
+                    <div>
+                        <input class="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <%- include('partials/footer') %>
+
+    </footer>
+
+    <script src="./javascripts/front.js"></script>
+</body>
+
+</html>
