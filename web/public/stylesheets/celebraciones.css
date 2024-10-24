@@ -1,0 +1,71 @@
+
+main#celebraciones {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: var(--site-width);
+    margin: auto;
+  
+    h1 {
+      font-size: var(--font-family-header);
+      font-size: 3rem;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+    }
+  
+    section.chess {
+  
+      .row {
+        display: flex;
+        position: relative;
+  
+        div {
+          flex: 1;
+          padding: 1rem;
+  
+          h3 {
+            font-family: var(--font-family-header);
+            font-size: 3rem;
+            line-height: 3rem;
+  
+          }
+  
+          * {
+            font-size: 1.5rem;
+            line-height: 2rem;
+  
+          }
+  
+        }
+  
+        div:has(img) {
+          padding: 0;
+          position: relative;
+  
+          img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            object-position: center center;
+  
+          }
+  
+        }
+  
+      }
+  
+  
+    }
+  
+  
+  }

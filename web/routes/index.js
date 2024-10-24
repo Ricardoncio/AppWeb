@@ -7,10 +7,10 @@ router.get('/', function(req, res, next) {
   res.render("home", {title: "Principal"});
 });
 router.get('/celebraciones', function(req, res, next) {
-  res.redirect("/celebraciones.html");
+  res.render("celebraciones", {title: "Celebraciones"});
 });
 router.get('/galeria', function(req, res, next) {
-  res.redirect("/galeria.html");
+  res.render("galeria", {title: "Galería"});
 });
 router.get('/contacto', function(req, res, next) {
   res.render("contacto", {title: "Contacto"});
