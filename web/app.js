@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 
@@ -17,6 +18,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Con esto se permite crear la sesión
+app.use( session({
+  secret: "923874289374923407329367429374423435734747344",
+  saveUninitialized: true,
+  resave: true
+
+}));
 
 app.use('/', indexRouter);
 

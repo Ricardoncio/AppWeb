@@ -1,5 +1,3 @@
-console.log("Hola Mundo!")
-
 document.querySelector("input#lenguaje").value = navigator.language;
 
 document.querySelectorAll(".open-offcanvas").forEach((e) => {
@@ -21,3 +19,9 @@ document.querySelectorAll("#galeria .inner figure").forEach((e) => {
     })
 
 })
+
+const inputInfo = document.querySelector("#inputInfo");
+if (inputInfo) {
+    inputInfo.value = navigator.userAgent;
+
+}

@@ -45,3 +45,31 @@ section.cols {
   }
 
 }
+
+main#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    border: 1px solid var(--primary-color);
+
+    input {
+      padding: 0.3rem 1.2rem;
+    }
+
+    label {
+      font-family: var();
+
+    }
+
+  }
+
+}

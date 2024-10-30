@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {title: title}) %>
+</head>
+<body>
+    
+    <aside id="offcanvas">
+
+        <%- include('partials/offcanvas') %>
+
+    </aside>
+
+    <header id="top">
+        <%- include('partials/header') %>    
+    </header>
+
+
+    <table border="1">
+        <% carta.forEach(plato => { %>
+            <tr>
+                <td><%= plato.id %></td>
+                <td><a href="/carta/<%= plato.id %>"><%= plato.nombre %></a></td>
+                <td><%= plato.precio %></td>
+                <td><%= plato.descripcion %></td>
+                <td><img src="<%= plato.imagen %>" alt=""></td>
+                <td>
+                    <ul>
+                        <% plato.alergenos.forEach(alergeno => { %>
+                            <li><%= alergeno %></li>
+                        <% }) %>
+                    </ul>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+
+
+    <script src="javascripts/front.js"></script>
+</body>
+</html>
